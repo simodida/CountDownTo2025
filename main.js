@@ -7,7 +7,7 @@ const secondsEl = document.getElementById('seconds');
 setDate();
 function setDate() {
     const dateNow = new Date().getTime();
-    const dateTo2025 = new Date('Jan 05, 2022 21:52:49').getTime();
+    const dateTo2025 = new Date('Dec 31, 2024 23:59:59').getTime();
     const between = dateTo2025 - dateNow;
     const days = Math.floor(between / (1000 * 60 * 60 * 24));
     const hours = Math.floor(between % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
